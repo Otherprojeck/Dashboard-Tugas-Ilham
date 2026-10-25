@@ -1,4 +1,4 @@
--- KampusHub admin setup (jalankan sekali di Supabase SQL Editor SETELAH membuat user admin di Authentication > Users).
+-- KampusHub admin setup (jalankan sekali setelah setup.sql membuat tabel documents; bisa dijalankan sebelum atau sesudah membuat user admin).
 -- Membuat daftar admin yang hanya dapat dikelola pemilik project melalui SQL Editor.
 -- Jangan membuat policy publik untuk INSERT/UPDATE/DELETE pada admin_users.
 

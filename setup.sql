@@ -17,6 +17,10 @@ create table if not exists public.documents (
 
 alter table public.documents enable row level security;
 
+-- Izinkan frontend menggunakan tabel melalui Supabase API; RLS di bawah tetap membatasi operasi.
+grant usage on schema public to anon, authenticated;
+grant select, insert on table public.documents to anon, authenticated;
+
 drop policy if exists "Public can read documents" on public.documents;
 create policy "Public can read documents"
 on public.documents for select to anon, authenticated

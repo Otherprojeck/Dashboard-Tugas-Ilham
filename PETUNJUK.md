@@ -38,6 +38,6 @@ Website statis berada di `index.html`. File tersebut sudah disiapkan untuk memak
 
 ## Batasan dan keamanan
 - Pengiriman dan membaca arsip disiapkan untuk publik dalam versi awal; siapa pun yang mengakses situs dapat mengirim dan membaca dokumen. Jangan unggah data rahasia.
-- Tombol Admin hanya menampilkan informasi; login admin dan penghapusan dokumen **belum diaktifkan**. Jangan mengandalkan PIN di kode frontend sebagai keamanan.
+- Login admin dan tombol hapus sudah tersedia di website, tetapi baru berfungsi setelah menjalankan `admin_setup.sql` dan mendaftarkan akun admin sesuai `ADMIN_PETUNJUK.md`.
 - Untuk penggunaan nyata, tambahkan Supabase Auth, role admin di database, policy hapus/ubah khusus admin, perlindungan spam, dan kebijakan privasi.
 - GitHub Pages adalah hosting situs, bukan database. Upload lintas perangkat baru berfungsi setelah konfigurasi Supabase selesai.
